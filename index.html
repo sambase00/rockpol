@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROCKPOL · Asistente con IA para Policía Local</title>
+  <meta name="description" content="ROCKPOL convierte el dictado de una intervención en parte y documentos oficiales, y automatiza el seguimiento de procedimientos con plazos y avisos. Solicita una demo.">
+  <meta property="og:title" content="ROCKPOL · Asistente con IA para Policía Local">
+  <meta property="og:description" content="Del dictado al parte y a los documentos oficiales. Procedimientos con plazos y avisos bajo control.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a1730">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a1730'/%3E%3Cpath d='M16 5l9 3.5v7c0 5.5-3.8 9.6-9 11.5-5.2-1.900-9-6-9-11.500v-7z' fill='%23f5c518'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="nav" id="inicio">
+    <div class="wrap nav__in">
+      <a class="logo" href="#inicio" aria-label="ROCKPOL, inicio">
+        <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M16 3l11 4.200v8.600c0 6.700-4.600 11.700-11 14-6.400-2.300-11-7.300-11-14V7.200z" fill="#f5c518"/><path d="M11 16.500l3.500 3.500 6.500-7" fill="none" stroke="#0a1730" stroke-width="2.600" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>ROCKPOL</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="menu" aria-label="Principal">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#procedimientos">Procedimientos</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="btn btn--accent btn--sm" href="#demo">Solicitar demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__band" aria-hidden="true"></div>
+      <div class="wrap hero__in">
+        <div class="hero__copy">
+          <p class="eyebrow">Asistente con IA para Policía Local</p>
+          <h1>Dicta la intervención.<br><span class="hl">El parte se escribe solo.</span></h1>
+          <p class="lead">ROCKPOL convierte el dictado de una intervención en parte y documentos oficiales, y lleva el seguimiento de cada procedimiento con sus plazos y avisos.</p>
+          <div class="hero__cta">
+            <a class="btn btn--accent" href="#demo">Solicitar demo</a>
+            <a class="btn btn--ghost" href="#como-funciona">Ver cómo funciona</a>
+          </div>
+          <ul class="hero__points">
+            <li>Menos tiempo de oficina, más tiempo en la calle</li>
+            <li>El agente revisa y valida siempre el resultado</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-label="Ejemplo ilustrativo: del dictado al parte">
+          <div class="card dictado">
+            <div class="card__head">
+              <span class="rec" aria-hidden="true"></span> Dictado del agente
+              <span class="tag">00:42</span>
+            </div>
+            <div class="wave" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <p class="dictado__txt">«A las 22:40 nos requieren en calle Mayor 12 por molestias de ruido. Se comprueba música a volumen elevado en el 2.º B, se identifica al titular y se le informa de la ordenanza…»</p>
+          </div>
+
+          <div class="flecha" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 4v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <div class="card parte">
+            <div class="card__head">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linejoin="round"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"/></svg>
+              Parte de intervención
+              <span class="tag tag--ok">Borrador listo</span>
+            </div>
+            <dl class="parte__datos">
+              <div><dt>Hora</dt><dd>22:40</dd></div>
+              <div><dt>Lugar</dt><dd>C/ Mayor, 12 · 2.º B</dd></div>
+              <div><dt>Motivo</dt><dd>Molestias por ruido</dd></div>
+              <div><dt>Actuación</dt><dd>Comprobación, identificación e información</dd></div>
+            </dl>
+            <div class="parte__docs">
+              <span>Parte</span><span>Acta de denuncia</span><span>Seguimiento abierto</span>
+            </div>
+          </div>
+          <p class="nota">Ejemplo ilustrativo con datos ficticios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="sec sec--tight">
+      <div class="wrap">
+        <div class="trio">
+          <article>
+            <h3>El papeleo se come el turno</h3>
+            <p>Cada intervención termina delante de un teclado, redactando lo que ya se ha contado por la emisora.</p>
+          </article>
+          <article>
+            <h3>Los mismos datos, varias veces</h3>
+            <p>Parte, acta, oficio, informe: la misma información copiada de un documento a otro.</p>
+          </article>
+          <article>
+            <h3>Plazos que dependen de la memoria</h3>
+            <p>El seguimiento vive en hojas de cálculo, notas y agendas personales. Un cambio de turno y se pierde el hilo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="sec sec--alt" id="como-funciona">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--dark">Cómo funciona</p>
+        <h2>De la voz al documento en tres pasos</h2>
+        <ol class="pasos">
+          <li>
+            <span class="pasos__n">1</span>
+            <h3>Dicta</h3>
+            <p>El agente cuenta la intervención con sus palabras, como lo haría a un compañero. Sin formularios ni campos que rellenar.</p>
+          </li>
+          <li>
+            <span class="pasos__n">2</span>
+            <h3>Revisa</h3>
+            <p>ROCKPOL ordena los hechos, extrae los datos clave y propone el parte. El agente corrige lo que haga falta y valida.</p>
+          </li>
+          <li>
+            <span class="pasos__n">3</span>
+            <h3>Genera y sigue</h3>
+            <p>Con un parte validado se generan los documentos oficiales asociados y se abre el seguimiento del procedimiento con sus plazos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FUNCIONES -->
+    <section class="sec" id="funciones">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--dark">Funciones</p>
+        <h2>Todo lo que viene después de la intervención</h2>
+        <div class="grid">
+          <article class="feat">
+            <div class="feat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></div>
+            <h3>Dictado a parte</h3>
+            <p>Del relato hablado a un parte estructurado: hechos, lugar, hora, personas implicadas y actuaciones realizadas.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></div>
+            <h3>Documentos oficiales</h3>
+            <p>Actas, oficios, informes y diligencias generados a partir del mismo parte, sin volver a teclear los datos.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/><circle cx="19" cy="18" r="2"/></svg></div>
+            <h3>Seguimiento de procedimientos</h3>
+            <p>Cada expediente con su estado, su responsable y su siguiente paso, visible para quien lo necesite.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></div>
+            <h3>Plazos y avisos</h3>
+            <p>ROCKPOL calcula los vencimientos y avisa con antelación, para que ningún trámite caduque por olvido.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M9 9v11"/></svg></div>
+            <h3>Tus plantillas</h3>
+            <p>Los documentos salen con el formato y los modelos de tu jefatura, no con uno genérico.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.400 8-8 9.500C7.400 20 4 17 4 12V6z"/><path d="M9 12l2.200 2.200L15 10.500"/></svg></div>
+            <h3>El agente decide</h3>
+            <p>La IA redacta y propone. Nada se da por bueno hasta que el agente lo revisa y lo valida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCEDIMIENTOS -->
+    <section class="sec sec--dark" id="procedimientos">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Procedimientos</p>
+          <h2>Los plazos, a la vista de todo el turno</h2>
+          <p class="lead lead--sm">Cada intervención que abre un procedimiento queda registrada con su próximo paso y su fecha límite. ROCKPOL avisa antes del vencimiento y el relevo sabe exactamente qué queda pendiente.</p>
+          <ul class="checks">
+            <li>Avisos anticipados de vencimiento</li>
+            <li>Estado y responsable de cada expediente</li>
+            <li>Historial completo desde el dictado inicial</li>
+          </ul>
+        </div>
+        <div class="tablero" aria-label="Ejemplo ilustrativo de seguimiento de procedimientos">
+          <div class="tablero__head">
+            <strong>Procedimientos abiertos</strong>
+            <span class="tag tag--warn">2 avisos</span>
+          </div>
+          <ul class="tablero__list">
+            <li>
+              <span class="dot dot--rojo" aria-hidden="true"></span>
+              <div><strong>Denuncia por ruidos</strong><small>Pendiente de notificación</small></div>
+              <span class="plazo plazo--rojo">Vence mañana</span>
+            </li>
+            <li>
+              <span class="dot dot--ambar" aria-hidden="true"></span>
+              <div><strong>Accidente con daños</strong><small>Informe técnico en curso</small></div>
+              <span class="plazo plazo--ambar">Vence en 4 días</span>
+            </li>
+            <li>
+              <span class="dot dot--verde" aria-hidden="true"></span>
+              <div><strong>Vehículo abandonado</strong><small>Requerimiento enviado</small></div>
+              <span class="plazo">Vence en 12 días</span>
+            </li>
+            <li>
+              <span class="dot dot--verde" aria-hidden="true"></span>
+              <div><strong>Ocupación de vía pública</strong><small>A la espera de alegaciones</small></div>
+              <span class="plazo">Vence en 18 días</span>
+            </li>
+          </ul>
+          <p class="nota nota--dark">Ejemplo ilustrativo con datos ficticios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sec" id="preguntas">
+      <div class="wrap wrap--narrow">
+        <p class="eyebrow eyebrow--dark">Preguntas frecuentes</p>
+        <h2>Lo que suelen preguntarnos</h2>
+        <div class="faq">
+          <details>
+            <summary>¿La IA sustituye al agente al redactar?</summary>
+            <p>No. ROCKPOL redacta un borrador a partir de lo que el agente dicta. El agente lo revisa, lo corrige si hace falta y es quien lo valida.</p>
+          </details>
+          <details>
+            <summary>¿Se adapta a los modelos de nuestra jefatura?</summary>
+            <p>Sí. Los documentos se generan sobre las plantillas y formatos que ya utiliza tu cuerpo. En la demo vemos cuáles son los tuyos.</p>
+          </details>
+          <details>
+            <summary>¿Cómo se tratan los datos de las intervenciones?</summary>
+            <p>Es lo primero que revisamos contigo. En la demo te explicamos con detalle dónde se alojan los datos, quién accede a ellos y qué medidas de seguridad se aplican.</p>
+          </details>
+          <details>
+            <summary>¿Qué necesitamos para empezar?</summary>
+            <p>Una demo de unos 30 minutos para conocer cómo trabajáis. A partir de ahí te proponemos un piloto ajustado al tamaño de tu plantilla.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="sec sec--alt" id="demo">
+      <div class="wrap split split--form">
+        <div>
+          <p class="eyebrow eyebrow--dark">Solicitar demo</p>
+          <h2>Míralo funcionando con un caso de tu municipio</h2>
+          <p class="lead lead--sm lead--ink">Cuéntanos quién eres y te contactamos para concertar una demostración sin compromiso.</p>
+          <ul class="checks checks--ink">
+            <li>30 minutos, por videollamada o en tu jefatura</li>
+            <li>Con un ejemplo real de vuestro día a día</li>
+            <li>Resolvemos dudas de implantación y datos</li>
+          </ul>
+        </div>
+
+        <form class="form" id="form-demo" novalidate>
+          <div class="form__row">
+            <label>Nombre y apellidos *
+              <input type="text" name="nombre" autocomplete="name" required>
+            </label>
+            <label>Cargo
+              <input type="text" name="cargo" autocomplete="organization-title" placeholder="Jefe, oficial, agente…">
+            </label>
+          </div>
+          <div class="form__row">
+            <label>Municipio / Cuerpo *
+              <input type="text" name="municipio" autocomplete="organization" required>
+            </label>
+            <label>Tamaño de plantilla
+              <select name="plantilla">
+                <option value="">Selecciona…</option>
+                <option>Menos de 10 agentes</option>
+                <option>10 – 25 agentes</option>
+                <option>26 – 50 agentes</option>
+                <option>51 – 100 agentes</option>
+                <option>Más de 100 agentes</option>
+              </select>
+            </label>
+          </div>
+          <div class="form__row">
+            <label>Correo electrónico *
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>Teléfono
+              <input type="tel" name="telefono" autocomplete="tel">
+            </label>
+          </div>
+          <label>¿Qué te gustaría ver en la demo?
+            <textarea name="mensaje" rows="4"></textarea>
+          </label>
+          <label class="hp" aria-hidden="true">No rellenar
+            <input type="text" name="web" tabindex="-1" autocomplete="off">
+          </label>
+          <label class="check">
+            <input type="checkbox" name="consentimiento" required>
+            <span>Acepto que ROCKPOL utilice estos datos para contactarme sobre la demo. *</span>
+          </label>
+          <button class="btn btn--accent btn--block" type="submit">Solicitar demo</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <span class="logo logo--sm">ROCKPOL</span>
+      <span>Asistente con IA para Policía Local</span>
+      <span>© <span id="anio">2026</span> ROCKPOL</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
