@@ -155,6 +155,17 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .plazo--rojo { color: #ff8a8a; }
 .plazo--ambar { color: var(--accent); }
 
+.historial { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.300rem; box-shadow: var(--shadow); }
+.historial__buscar { display: flex; align-items: center; gap: .6rem; padding: .7rem .9rem; border: 1.500px solid var(--blue); border-radius: 10px; font-weight: 600; }
+.historial__buscar svg { fill: none; stroke: var(--muted); stroke-width: 1.800; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.historial__buscar .historial__mic { margin-left: auto; stroke: var(--blue); }
+.historial__total { font-size: .8rem; font-weight: 700; color: var(--muted); margin: 1rem 0 .2rem; }
+.historial__list li { display: grid; grid-template-columns: 58px 1fr; gap: .8rem; align-items: center; padding: .8rem 0; border-top: 1px solid var(--line); }
+.historial__list time { font-size: .8rem; font-weight: 700; color: var(--blue); }
+.historial__list strong { display: block; font-size: .95rem; }
+.historial__list small { color: var(--muted); }
+.nota--ink { color: var(--muted); margin-top: .6rem; }
+
 /* FAQ */
 .faq details { border-bottom: 1px solid var(--line); }
 .faq summary { cursor: pointer; padding: 1.100rem 2rem 1.100rem 0; font-weight: 700; list-style: none; position: relative; }
