@@ -130,6 +130,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .pasos li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.600rem; }
 .pasos__n { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--navy); color: var(--accent); font-weight: 800; margin-bottom: 1rem; }
 
+.compara { display: grid; grid-template-columns: 1fr 1fr; gap: 1.500rem; margin-top: 1.500rem; }
+.compara__col { border: 1px dashed #c5d0ea; border-radius: var(--radius); padding: 1.400rem 1.600rem; color: var(--muted); }
+.compara__col h3 { color: var(--ink); margin-bottom: .8rem; }
+.compara__col ul { display: grid; gap: .5rem; font-size: .97rem; }
+.compara__col li { position: relative; padding-left: 1.500rem; }
+.compara__col li::before { content: "×"; position: absolute; left: 0; top: -.15em; font-size: 1.200rem; font-weight: 700; color: var(--danger); }
+.compara__col--si { background: var(--navy); border: 1px solid var(--navy); color: #c9d3ea; }
+.compara__col--si h3 { color: #fff; }
+.compara__col--si li::before { content: "✓"; top: 0; font-size: 1rem; color: var(--accent); }
+
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.500rem; }
 .feat { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.600rem; transition: border-color .15s, box-shadow .15s; }
 .feat:hover { border-color: #c5d0ea; box-shadow: var(--shadow); }
@@ -200,7 +210,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 900px) {
   .hero__in, .split { grid-template-columns: 1fr; gap: 2.500rem; }
   .hero__in { padding: 3.500rem 0 4.500rem; }
-  .trio, .pasos, .grid { grid-template-columns: 1fr; }
+  .trio, .pasos, .grid, .compara { grid-template-columns: 1fr; }
   .sec { padding: 3.500rem 0; }
   .nav__toggle { display: block; }
   .nav__links {
